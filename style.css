@@ -7,15 +7,12 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Conteneur principal */
 .container {
     max-width: 700px;
     width: 90%;
     margin: 40px auto;
 }
 
-/* Ajustements responsive */
 @media (max-width: 720px) {
   .container {
     width: 90%; /* Permet un meilleur affichage */
@@ -28,7 +25,6 @@ body {
   }
 }
 
-/* Carte blanche */
 .card-white {
     background-color: white;
     padding: 30px;
@@ -37,13 +33,11 @@ body {
     margin-bottom: 20px;
 }
 
-/* Titres */
 h1, h2 {
     font-family: "Roboto", sans-serif;
     margin-bottom: 15px;
 }
 
-/* Images */
 img {
     width: 100%;
     max-width: 500px;
@@ -88,7 +82,6 @@ ul {
     padding: 0;
 }
 
-/* Bouton LinkedIn */
 .linkedin-button {
     background-color: transparent;
     color: #0077b5;
@@ -119,7 +112,6 @@ ul {
     color: white;
 }
 
-/* Optimisation mobile */
 @media (max-width: 480px) {
     .container {
         width: 95%;
