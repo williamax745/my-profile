@@ -8,33 +8,27 @@ body {
     padding: 0;
 }
 
+/* Conteneur principal */
 .container {
     max-width: 700px;
+    width: 90%;
     margin: 40px auto;
 }
 
-/* Écran < 960px */
-@media (max-width: 960px) {
-  .container {
-    width: 700px;
-  }
-}
-
-/* Écran < 720px */
+/* Ajustements responsive */
 @media (max-width: 720px) {
   .container {
-    width: 500px;
+    width: 90%; /* Permet un meilleur affichage */
   }
 }
 
-/* Écran < 540px */
 @media (max-width: 540px) {
   .container {
-    width: 300px;
+    width: 95%;
   }
 }
 
-
+/* Carte blanche */
 .card-white {
     background-color: white;
     padding: 30px;
@@ -43,10 +37,13 @@ body {
     margin-bottom: 20px;
 }
 
+/* Titres */
 h1, h2 {
     font-family: "Roboto", sans-serif;
+    margin-bottom: 15px;
 }
 
+/* Images */
 img {
     width: 100%;
     max-width: 500px;
@@ -56,7 +53,7 @@ img {
 }
 
 #moi {
-    width: 200px;
+    width: 150px; /* Réduction pour mobile */
     border-radius: 50%;
 }
 
@@ -64,6 +61,7 @@ img:hover {
     transform: scale(1.05);
 }
 
+/* Liens */
 a {
     text-decoration: none;
     color: #ff884A;
@@ -84,18 +82,20 @@ a:hover, a:hover i {
     color: #0077b5;
 }
 
+/* Liste */
 ul {
     list-style: none;
     padding: 0;
 }
 
+/* Bouton LinkedIn */
 .linkedin-button {
-    background-color: transparent; /* Pas de couleur par défaut */
-    color: #0077b5; /* Bleu LinkedIn */
+    background-color: transparent;
+    color: #0077b5;
     font-size: 18px;
     font-weight: bold;
     padding: 12px 24px;
-    border: 2px solid #0077b5; /* Bordure bleue */
+    border: 2px solid #0077b5;
     border-radius: 8px;
     display: inline-flex;
     align-items: center;
@@ -106,8 +106,8 @@ ul {
 }
 
 .linkedin-button:hover {
-    background-color: #0077b5; /* Fond bleu au survol */
-    color: white; /* Texte blanc au survol */
+    background-color: #0077b5;
+    color: white;
 }
 
 .linkedin-button i {
@@ -116,5 +116,25 @@ ul {
 }
 
 .linkedin-button:hover i {
-    color: white; /* Icône blanche au survol */
+    color: white;
+}
+
+/* Optimisation mobile */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    #moi {
+        width: 120px;
+    }
+
+    .linkedin-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
 }
